@@ -81,7 +81,7 @@ varify.onclick = function () {
   );
   if (
     check[0].style.border == check[1].style.border &&
-    check[0].style.border == "2px solid"
+    check[0].style.border == "5px solid"
   ) {
     para.innerHTML = "You are a human. Congratulations!";
   } else {
@@ -95,8 +95,8 @@ varify.style.display = "none";
 document.body.appendChild(varify);
 
 const select = (image) => {
-  if (image.style.border != "2px solid") {
-    image.style.border = "2px solid";
+  if (image.style.border != "5px solid") {
+    image.style.border = "5px solid";
     msg.innerHTML = "";
     reset.style.display = "block";
     selectedImg.push(image);
